@@ -1,0 +1,23 @@
+<!-- without css -->
+<br><br><br>
+
+<div class="hantarEmail">
+    <p>Selamat Hari Lahir! Best Wishes For You</p>
+
+    <div *ngFor="let dataUser of displayDetail" class="details" action=”contact”>
+        <p>{{dataUser.name}}</p>
+        <p>{{dataUser.alamat}} {{dataUser.alamat2}} {{dataUser.bandar}} {{dataUser.poskod}} {{dataUser.negeri}}</p>
+        <p>{{dataUser.dob}}</p>
+        <p>{{dataUser.kad}}</p>
+        <p>{{dataUser.email}}</p>
+    </div>
+
+    <br><br><br>
+
+    <div class="d-grid gap-1 d-md-flex justify-content-md-end">  
+        <button mat-raised-button color="primary" type="submit" value="submit" (click)="hantarEmail()">Hantar</button>
+    </div>
+
+
+</div>
+
